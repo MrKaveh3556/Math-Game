@@ -3,24 +3,21 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Math_Game.Game;
 using Math_Game.Properties;
 
 namespace Math_Game
 {
   internal class GenerateNumber
   {
-    private string Level
+    public string Level
     { get { return Settings.Default.Level; } }
-
-    private string Operator
-    { get { return Settings.Default.Operator; } }
-
-    private int Time
-    { get { return Settings.Default.Time; } }
 
     private Game_Form _gameForm { get; }
 
     public GenerateNumber(Game_Form gameForm) => _gameForm = gameForm;
+
+    #region Check Level
 
     internal void CheckLevel()
     {
@@ -52,5 +49,7 @@ namespace Math_Game
       _gameForm.Number1_Label.Text = $"{random.Next(100, 999)}";
       _gameForm.Number2_Label.Text = $"{random.Next(100, 999)}";
     }
+
+    #endregion Check Level
   }
 }

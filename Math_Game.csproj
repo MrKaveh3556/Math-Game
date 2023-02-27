@@ -52,7 +52,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Check Setting\Check Setting.cs" />
+    <Compile Include="Check\Check Setting.cs" />
+    <Compile Include="Check\Check Answers.cs" />
     <Compile Include="Main\Main Form.cs">
       <SubType>Form</SubType>
     </Compile>
