@@ -28,6 +28,7 @@
     /// </summary>
     private void InitializeComponent()
     {
+      this.components = new System.ComponentModel.Container();
       this.label1 = new System.Windows.Forms.Label();
       this.Start_Button = new System.Windows.Forms.Button();
       this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -56,6 +57,7 @@
       this.label21 = new System.Windows.Forms.Label();
       this.label20 = new System.Windows.Forms.Label();
       this.label19 = new System.Windows.Forms.Label();
+      this.Speaking_Timer = new System.Windows.Forms.Timer(this.components);
       this.groupBox1.SuspendLayout();
       this.groupBox2.SuspendLayout();
       this.groupBox3.SuspendLayout();
@@ -67,9 +69,9 @@
       this.label1.Font = new System.Drawing.Font("Vazirmatn", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.label1.Location = new System.Drawing.Point(12, 9);
       this.label1.Name = "label1";
-      this.label1.Size = new System.Drawing.Size(182, 27);
+      this.label1.Size = new System.Drawing.Size(208, 27);
       this.label1.TabIndex = 0;
-      this.label1.Text = "Welcome to Math Game";
+      this.label1.Text = "Welcome to the Math Game";
       // 
       // Start_Button
       // 
@@ -355,6 +357,10 @@
       this.label19.TabIndex = 40;
       this.label19.Text = "Choose your Time :";
       // 
+      // Speaking_Timer
+      // 
+      this.Speaking_Timer.Interval = 1000;
+      // 
       // Main_Form
       // 
       this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -367,6 +373,7 @@
       this.Controls.Add(this.label1);
       this.Name = "Main_Form";
       this.Text = "Main Form";
+      this.Load += new System.EventHandler(this.Main_Form_Load);
       this.groupBox1.ResumeLayout(false);
       this.groupBox1.PerformLayout();
       this.groupBox2.ResumeLayout(false);
@@ -408,6 +415,7 @@
     internal System.Windows.Forms.Label label21;
     internal System.Windows.Forms.Label label20;
     internal System.Windows.Forms.Label label19;
+    private System.Windows.Forms.Timer Speaking_Timer;
   }
 }
 

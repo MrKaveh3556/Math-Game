@@ -103,7 +103,7 @@ namespace Math_Game
       DisableTimer();
       string point = Score_Label.Text.Trim();
       MessageBox.Show(
-        $"you get {point} points!");
+        $"you get {point} points! Thanks for Playing! I hope you enjoyed!");
       Close();
     }
   }
