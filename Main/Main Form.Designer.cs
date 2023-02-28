@@ -164,9 +164,9 @@
       this.label2.Font = new System.Drawing.Font("Vazirmatn", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.label2.Location = new System.Drawing.Point(6, 16);
       this.label2.Name = "label2";
-      this.label2.Size = new System.Drawing.Size(149, 27);
+      this.label2.Size = new System.Drawing.Size(171, 27);
       this.label2.TabIndex = 13;
-      this.label2.Text = "Choose your Level :";
+      this.label2.Text = "Choose your Difficulty:";
       // 
       // groupBox2
       // 

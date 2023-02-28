@@ -70,6 +70,7 @@
     <Compile Include="Game\Generate Number.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Timer\Timer Settings.cs" />
     <EmbeddedResource Include="Main\Main Form.resx">
       <DependentUpon>Main Form.cs</DependentUpon>
     </EmbeddedResource>

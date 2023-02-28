@@ -72,10 +72,16 @@ namespace Math_Game
 
     private void Start_Button_Click(object sender, EventArgs e)
     {
+      MuteSound();
       SetSettingValues();
       Hide();
       new Game_Form().ShowDialog();
       Show();
+    }
+
+    private void MuteSound()
+    {
+      while (_MrRobot.State == SynthesizerState.Speaking) {/*wait*/ }
     }
 
     private void SetSettingValues()

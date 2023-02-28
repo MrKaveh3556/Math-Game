@@ -10,7 +10,7 @@ namespace Math_Game
 {
   internal class GenerateNumber
   {
-    public string Level
+    public string Difficulty
     { get { return Settings.Default.Level; } }
 
     private Game_Form _gameForm { get; }
@@ -21,9 +21,9 @@ namespace Math_Game
 
     internal void CheckLevel()
     {
-      if (Level == "medium")
+      if (Difficulty == "medium")
         GenerateNumbers_Medium();
-      else if (Level == "hard")
+      else if (Difficulty == "hard")
         GenerateNumbers_Hard();
       else
         GenerateNumbers_Easy();

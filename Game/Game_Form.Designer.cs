@@ -42,12 +42,14 @@
       this.Operator_Label = new System.Windows.Forms.Label();
       this.Number1_Label = new System.Windows.Forms.Label();
       this.timer1 = new System.Windows.Forms.Timer(this.components);
+      this.Level_Label = new System.Windows.Forms.Label();
+      this.label2 = new System.Windows.Forms.Label();
       this.SuspendLayout();
       // 
       // Finish_Button
       // 
       this.Finish_Button.Font = new System.Drawing.Font("Vazirmatn", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.Finish_Button.Location = new System.Drawing.Point(83, 136);
+      this.Finish_Button.Location = new System.Drawing.Point(82, 189);
       this.Finish_Button.Name = "Finish_Button";
       this.Finish_Button.Size = new System.Drawing.Size(168, 40);
       this.Finish_Button.TabIndex = 49;
@@ -58,7 +60,7 @@
       // Score_Label
       // 
       this.Score_Label.Font = new System.Drawing.Font("Vazirmatn", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.Score_Label.Location = new System.Drawing.Point(339, 10);
+      this.Score_Label.Location = new System.Drawing.Point(103, 37);
       this.Score_Label.Name = "Score_Label";
       this.Score_Label.Size = new System.Drawing.Size(40, 27);
       this.Score_Label.TabIndex = 48;
@@ -68,7 +70,7 @@
       // 
       this.label11.AutoSize = true;
       this.label11.Font = new System.Drawing.Font("Vazirmatn", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.label11.Location = new System.Drawing.Point(248, 9);
+      this.label11.Location = new System.Drawing.Point(12, 36);
       this.label11.Name = "label11";
       this.label11.Size = new System.Drawing.Size(96, 27);
       this.label11.TabIndex = 47;
@@ -77,7 +79,7 @@
       // VerifyAnswer_Button
       // 
       this.VerifyAnswer_Button.Font = new System.Drawing.Font("Vazirmatn", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.VerifyAnswer_Button.Location = new System.Drawing.Point(83, 86);
+      this.VerifyAnswer_Button.Location = new System.Drawing.Point(82, 139);
       this.VerifyAnswer_Button.Name = "VerifyAnswer_Button";
       this.VerifyAnswer_Button.Size = new System.Drawing.Size(168, 40);
       this.VerifyAnswer_Button.TabIndex = 46;
@@ -87,10 +89,10 @@
       // 
       // Result_Textbox
       // 
-      this.Result_Textbox.Font = new System.Drawing.Font("Vazirmatn", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.Result_Textbox.Location = new System.Drawing.Point(224, 48);
+      this.Result_Textbox.Font = new System.Drawing.Font("Vazirmatn", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.Result_Textbox.Location = new System.Drawing.Point(197, 104);
       this.Result_Textbox.Name = "Result_Textbox";
-      this.Result_Textbox.Size = new System.Drawing.Size(118, 32);
+      this.Result_Textbox.Size = new System.Drawing.Size(118, 28);
       this.Result_Textbox.TabIndex = 45;
       this.Result_Textbox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Equal_Textbox_KeyPress);
       // 
@@ -126,7 +128,7 @@
       // label14
       // 
       this.label14.Font = new System.Drawing.Font("Vazirmatn", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.label14.Location = new System.Drawing.Point(198, 50);
+      this.label14.Location = new System.Drawing.Point(171, 106);
       this.label14.Name = "label14";
       this.label14.Size = new System.Drawing.Size(20, 27);
       this.label14.TabIndex = 41;
@@ -135,7 +137,7 @@
       // Number2_Label
       // 
       this.Number2_Label.Font = new System.Drawing.Font("Vazirmatn", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.Number2_Label.Location = new System.Drawing.Point(161, 50);
+      this.Number2_Label.Location = new System.Drawing.Point(134, 106);
       this.Number2_Label.Name = "Number2_Label";
       this.Number2_Label.Size = new System.Drawing.Size(46, 27);
       this.Number2_Label.TabIndex = 40;
@@ -144,7 +146,7 @@
       // Operator_Label
       // 
       this.Operator_Label.Font = new System.Drawing.Font("Vazirmatn", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.Operator_Label.Location = new System.Drawing.Point(141, 50);
+      this.Operator_Label.Location = new System.Drawing.Point(114, 106);
       this.Operator_Label.Name = "Operator_Label";
       this.Operator_Label.Size = new System.Drawing.Size(28, 27);
       this.Operator_Label.TabIndex = 39;
@@ -153,7 +155,7 @@
       // Number1_Label
       // 
       this.Number1_Label.Font = new System.Drawing.Font("Vazirmatn", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.Number1_Label.Location = new System.Drawing.Point(104, 50);
+      this.Number1_Label.Location = new System.Drawing.Point(77, 106);
       this.Number1_Label.Name = "Number1_Label";
       this.Number1_Label.Size = new System.Drawing.Size(46, 27);
       this.Number1_Label.TabIndex = 38;
@@ -164,12 +166,33 @@
       this.timer1.Interval = 1000;
       this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
       // 
+      // Level_Label
+      // 
+      this.Level_Label.Font = new System.Drawing.Font("Vazirmatn", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.Level_Label.Location = new System.Drawing.Point(103, 65);
+      this.Level_Label.Name = "Level_Label";
+      this.Level_Label.Size = new System.Drawing.Size(40, 27);
+      this.Level_Label.TabIndex = 51;
+      this.Level_Label.Text = "1";
+      // 
+      // label2
+      // 
+      this.label2.AutoSize = true;
+      this.label2.Font = new System.Drawing.Font("Vazirmatn", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.label2.Location = new System.Drawing.Point(12, 64);
+      this.label2.Name = "label2";
+      this.label2.Size = new System.Drawing.Size(93, 27);
+      this.label2.TabIndex = 50;
+      this.label2.Text = "Your Level :";
+      // 
       // Game_Form
       // 
       this.AcceptButton = this.VerifyAnswer_Button;
       this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-      this.ClientSize = new System.Drawing.Size(435, 223);
+      this.ClientSize = new System.Drawing.Size(435, 290);
+      this.Controls.Add(this.Level_Label);
+      this.Controls.Add(this.label2);
       this.Controls.Add(this.Finish_Button);
       this.Controls.Add(this.Score_Label);
       this.Controls.Add(this.label11);
@@ -184,6 +207,8 @@
       this.Controls.Add(this.Number1_Label);
       this.Name = "Game_Form";
       this.Text = "Game_Form";
+      this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Game_Form_FormClosing);
+      this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Game_Form_FormClosed);
       this.Load += new System.EventHandler(this.Game_Form_Load);
       this.ResumeLayout(false);
       this.PerformLayout();
@@ -203,6 +228,8 @@
     internal System.Windows.Forms.Label Number2_Label;
     internal System.Windows.Forms.Label Operator_Label;
     internal System.Windows.Forms.Label Number1_Label;
-    private System.Windows.Forms.Timer timer1;
+    internal System.Windows.Forms.Label Level_Label;
+    internal System.Windows.Forms.Label label2;
+    internal System.Windows.Forms.Timer timer1;
   }
 }
