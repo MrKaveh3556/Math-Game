@@ -81,7 +81,7 @@ namespace Math_Game
 
     private void MuteSound()
     {
-      while (_MrRobot.State == SynthesizerState.Speaking) {/*wait*/ }
+      while (_MrRobot.State == SynthesizerState.Speaking) { /*wait*/ }
     }
 
     private void SetSettingValues()

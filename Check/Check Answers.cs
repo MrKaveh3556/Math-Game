@@ -28,15 +28,23 @@ namespace Math_Game.Game
 
     public CheckAnswers(Game_Form form) => _form = form;
 
+    #region Answer Arena
+
     internal void VerifyAnswer() => _VerifyAnswer();
 
     private void _VerifyAnswer()
+    {
+      CheckAnswer();
+      ClearTextBox();
+    }
+
+    private void CheckAnswer()
     {
       int number1 = Convert.ToInt32(_form.Number1_Label.Text.Trim());
       int number2 = Convert.ToInt32(_form.Number2_Label.Text.Trim());
       int result = Convert.ToInt32(_form.Result_Textbox.Text.Trim());
 
-      if (CheckAnswer(number1, number2, result))
+      if (CheckResult(number1, number2, result))
       {
         GetScore();
         new GenerateNumber(_form).CheckLevel();
@@ -47,8 +55,6 @@ namespace Math_Game.Game
         Lose();
         _form.Close();
       }
-
-      _form.Result_Textbox.Text = "";
     }
 
     #region Get Score
@@ -93,7 +99,11 @@ namespace Math_Game.Game
         $"Unfortunately You Lose :( but you get {point} Points!");
     }
 
-    public bool CheckAnswer(int number1, int number2, int result)
+    private void ClearTextBox() => _form.Result_Textbox.Text = "";
+
+    #endregion Answer Arena
+
+    public bool CheckResult(int number1, int number2, int result)
     {
       if (CheckPlus())
       {
