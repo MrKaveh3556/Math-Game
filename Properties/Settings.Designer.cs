@@ -12,7 +12,7 @@ namespace Math_Game.Properties
 {
 
   [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-  [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "17.4.0.0")]
+  [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "17.5.0.0")]
   internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase
   {
 
@@ -28,7 +28,7 @@ namespace Math_Game.Properties
 
     [global::System.Configuration.ApplicationScopedSettingAttribute()]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-    [global::System.Configuration.DefaultSettingValueAttribute("")]
+    [global::System.Configuration.DefaultSettingValueAttribute("easy")]
     public string Level
     {
       get
@@ -43,7 +43,7 @@ namespace Math_Game.Properties
 
     [global::System.Configuration.ApplicationScopedSettingAttribute()]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-    [global::System.Configuration.DefaultSettingValueAttribute("")]
+    [global::System.Configuration.DefaultSettingValueAttribute("+")]
     public string Operator
     {
       get
@@ -58,7 +58,7 @@ namespace Math_Game.Properties
 
     [global::System.Configuration.ApplicationScopedSettingAttribute()]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-    [global::System.Configuration.DefaultSettingValueAttribute("0")]
+    [global::System.Configuration.DefaultSettingValueAttribute("10")]
     public int Time
     {
       get

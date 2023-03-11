@@ -11,8 +11,8 @@ using System.Speech.Synthesis;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Math_Game.Game;
 using Math_Game.Properties;
+using static DevExpress.Utils.Drawing.Helpers.NativeMethods;
 
 namespace Math_Game
 {
@@ -27,23 +27,23 @@ namespace Math_Game
 
     private void Main_Form_Load(object sender, EventArgs e)
     {
-      _MrRobot.SpeakAsync("Welcome to the Math Game");
-      if (DateTime.Now.Year == 2023)
-      {
-        var (day, month, year) = Miladi_To_Shamsi(
-          DateTime.Now.Day,
-          DateTime.Now.Month,
-          DateTime.Now.Year);
+      //_MrRobot.SpeakAsync("Welcome to the Math Game");
+      //if (DateTime.Now.Year == 2023)
+      //{
+      //  var (day, month, year) = Miladi_To_Shamsi(
+      //    DateTime.Now.Day,
+      //    DateTime.Now.Month,
+      //    DateTime.Now.Year);
 
-        SayDate(day, month, year);
-      }
-      else
-      {
-        SayDate(
-          DateTime.Now.Day,
-          DateTime.Now.Month,
-          DateTime.Now.Year);
-      }
+      //  SayDate(day, month, year);
+      //}
+      //else
+      //{
+      //  SayDate(
+      //    DateTime.Now.Day,
+      //    DateTime.Now.Month,
+      //    DateTime.Now.Year);
+      //}
     }
 
     #region Date
@@ -86,10 +86,77 @@ namespace Math_Game
 
     private void SetSettingValues()
     {
-      CheckSetting check = new CheckSetting(this);
-      Settings.Default.Level = check.CheckLevel();
-      Settings.Default.Operator = check.CheckOperator();
-      Settings.Default.Time = check.CheckTime();
+      Settings.Default.Level = CheckLevel();
+      Settings.Default.Operator = CheckOperator();
+      Settings.Default.Time = CheckTime();
     }
+
+    #region Return Values
+
+    internal string CheckLevel()
+    {
+      string level = "easy";
+      if (CheckMedium())
+      {
+        level = "medium";
+      }
+      else if (CheckHard())
+      {
+        level = "hard";
+      }
+      return level;
+    }
+
+    internal string CheckOperator()
+    {
+      string operatorvalue = "+";
+      if (CheckMines())
+      {
+        operatorvalue = "-";
+      }
+      else if (CheckMultiple())
+      {
+        operatorvalue = "*";
+      }
+      else if (CheckDivision())
+      {
+        operatorvalue = "/";
+      }
+      return operatorvalue;
+    }
+
+    internal int CheckTime()
+    {
+      int time = 10;
+      if (CheckTwenty())
+      {
+        time = 20;
+      }
+      else if (CheckThirty())
+      {
+        time = 30;
+      }
+      return time;
+    }
+
+    #endregion Return Values
+
+    #region Check Values
+
+    internal bool CheckMedium() => Medium_Radio.Checked;
+
+    internal bool CheckHard() => Hard_Radio.Checked;
+
+    internal bool CheckMines() => Mines_Radio.Checked;
+
+    internal bool CheckMultiple() => Multiple_Radio.Checked;
+
+    internal bool CheckDivision() => Division_Radio.Checked;
+
+    internal bool CheckTwenty() => Twenty_Radio.Checked;
+
+    internal bool CheckThirty() => Thirty_Radio.Checked;
+
+    #endregion Check Values
   }
 }

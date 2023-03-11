@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Math_Game.Game;
 using Math_Game.Properties;
 
 namespace Math_Game

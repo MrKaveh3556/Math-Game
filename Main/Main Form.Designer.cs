@@ -67,16 +67,16 @@
       // 
       this.label1.AutoSize = true;
       this.label1.Font = new System.Drawing.Font("Vazirmatn", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.label1.Location = new System.Drawing.Point(12, 9);
+      this.label1.Location = new System.Drawing.Point(37, 9);
       this.label1.Name = "label1";
-      this.label1.Size = new System.Drawing.Size(208, 27);
+      this.label1.Size = new System.Drawing.Size(190, 27);
       this.label1.TabIndex = 0;
-      this.label1.Text = "Welcome to the Math Game";
+      this.label1.Text = "به بازی ریاضیات خوش آمدید";
       // 
       // Start_Button
       // 
       this.Start_Button.Font = new System.Drawing.Font("Vazirmatn", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.Start_Button.Location = new System.Drawing.Point(12, 468);
+      this.Start_Button.Location = new System.Drawing.Point(33, 468);
       this.Start_Button.Name = "Start_Button";
       this.Start_Button.Size = new System.Drawing.Size(168, 40);
       this.Start_Button.TabIndex = 17;
@@ -93,7 +93,7 @@
       this.groupBox1.Controls.Add(this.label5);
       this.groupBox1.Controls.Add(this.label4);
       this.groupBox1.Controls.Add(this.label2);
-      this.groupBox1.Location = new System.Drawing.Point(12, 39);
+      this.groupBox1.Location = new System.Drawing.Point(15, 39);
       this.groupBox1.Name = "groupBox1";
       this.groupBox1.Size = new System.Drawing.Size(218, 128);
       this.groupBox1.TabIndex = 38;
@@ -103,7 +103,7 @@
       // 
       this.Easy_Radio.AutoSize = true;
       this.Easy_Radio.Checked = true;
-      this.Easy_Radio.Location = new System.Drawing.Point(82, 47);
+      this.Easy_Radio.Location = new System.Drawing.Point(136, 47);
       this.Easy_Radio.Name = "Easy_Radio";
       this.Easy_Radio.Size = new System.Drawing.Size(14, 13);
       this.Easy_Radio.TabIndex = 19;
@@ -113,7 +113,7 @@
       // Medium_Radio
       // 
       this.Medium_Radio.AutoSize = true;
-      this.Medium_Radio.Location = new System.Drawing.Point(82, 73);
+      this.Medium_Radio.Location = new System.Drawing.Point(136, 73);
       this.Medium_Radio.Name = "Medium_Radio";
       this.Medium_Radio.Size = new System.Drawing.Size(14, 13);
       this.Medium_Radio.TabIndex = 18;
@@ -122,7 +122,7 @@
       // Hard_Radio
       // 
       this.Hard_Radio.AutoSize = true;
-      this.Hard_Radio.Location = new System.Drawing.Point(82, 100);
+      this.Hard_Radio.Location = new System.Drawing.Point(136, 100);
       this.Hard_Radio.Name = "Hard_Radio";
       this.Hard_Radio.Size = new System.Drawing.Size(14, 13);
       this.Hard_Radio.TabIndex = 17;
@@ -132,41 +132,41 @@
       // 
       this.label6.AutoSize = true;
       this.label6.Font = new System.Drawing.Font("Vazirmatn", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.label6.Location = new System.Drawing.Point(6, 43);
+      this.label6.Location = new System.Drawing.Point(168, 40);
       this.label6.Name = "label6";
-      this.label6.Size = new System.Drawing.Size(46, 27);
+      this.label6.Size = new System.Drawing.Size(44, 27);
       this.label6.TabIndex = 16;
-      this.label6.Text = "Easy";
+      this.label6.Text = "آسان";
       // 
       // label5
       // 
       this.label5.AutoSize = true;
       this.label5.Font = new System.Drawing.Font("Vazirmatn", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.label5.Location = new System.Drawing.Point(6, 70);
+      this.label5.Location = new System.Drawing.Point(153, 67);
       this.label5.Name = "label5";
-      this.label5.Size = new System.Drawing.Size(70, 27);
+      this.label5.Size = new System.Drawing.Size(59, 27);
       this.label5.TabIndex = 15;
-      this.label5.Text = "Medium";
+      this.label5.Text = "متوسط";
       // 
       // label4
       // 
       this.label4.AutoSize = true;
       this.label4.Font = new System.Drawing.Font("Vazirmatn", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.label4.Location = new System.Drawing.Point(6, 97);
+      this.label4.Location = new System.Drawing.Point(161, 94);
       this.label4.Name = "label4";
-      this.label4.Size = new System.Drawing.Size(46, 27);
+      this.label4.Size = new System.Drawing.Size(51, 27);
       this.label4.TabIndex = 14;
-      this.label4.Text = "Hard";
+      this.label4.Text = "سخت";
       // 
       // label2
       // 
       this.label2.AutoSize = true;
       this.label2.Font = new System.Drawing.Font("Vazirmatn", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.label2.Location = new System.Drawing.Point(6, 16);
+      this.label2.Location = new System.Drawing.Point(32, 16);
       this.label2.Name = "label2";
-      this.label2.Size = new System.Drawing.Size(171, 27);
+      this.label2.Size = new System.Drawing.Size(180, 27);
       this.label2.TabIndex = 13;
-      this.label2.Text = "Choose your Difficulty:";
+      this.label2.Text = "سختی بازی را انتخاب کنید :";
       // 
       // groupBox2
       // 
@@ -189,7 +189,7 @@
       // 
       this.Plus_Radio.AutoSize = true;
       this.Plus_Radio.Checked = true;
-      this.Plus_Radio.Location = new System.Drawing.Point(34, 38);
+      this.Plus_Radio.Location = new System.Drawing.Point(171, 38);
       this.Plus_Radio.Name = "Plus_Radio";
       this.Plus_Radio.Size = new System.Drawing.Size(14, 13);
       this.Plus_Radio.TabIndex = 25;
@@ -199,7 +199,7 @@
       // Mines_Radio
       // 
       this.Mines_Radio.AutoSize = true;
-      this.Mines_Radio.Location = new System.Drawing.Point(34, 65);
+      this.Mines_Radio.Location = new System.Drawing.Point(171, 65);
       this.Mines_Radio.Name = "Mines_Radio";
       this.Mines_Radio.Size = new System.Drawing.Size(14, 13);
       this.Mines_Radio.TabIndex = 24;
@@ -208,7 +208,7 @@
       // Multiple_Radio
       // 
       this.Multiple_Radio.AutoSize = true;
-      this.Multiple_Radio.Location = new System.Drawing.Point(34, 89);
+      this.Multiple_Radio.Location = new System.Drawing.Point(171, 89);
       this.Multiple_Radio.Name = "Multiple_Radio";
       this.Multiple_Radio.Size = new System.Drawing.Size(14, 13);
       this.Multiple_Radio.TabIndex = 23;
@@ -217,7 +217,7 @@
       // Division_Radio
       // 
       this.Division_Radio.AutoSize = true;
-      this.Division_Radio.Location = new System.Drawing.Point(34, 117);
+      this.Division_Radio.Location = new System.Drawing.Point(171, 117);
       this.Division_Radio.Name = "Division_Radio";
       this.Division_Radio.Size = new System.Drawing.Size(14, 13);
       this.Division_Radio.TabIndex = 22;
@@ -227,7 +227,7 @@
       // 
       this.label10.AutoSize = true;
       this.label10.Font = new System.Drawing.Font("Vazirmatn", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.label10.Location = new System.Drawing.Point(6, 34);
+      this.label10.Location = new System.Drawing.Point(194, 32);
       this.label10.Name = "label10";
       this.label10.Size = new System.Drawing.Size(21, 27);
       this.label10.TabIndex = 21;
@@ -237,7 +237,7 @@
       // 
       this.label9.AutoSize = true;
       this.label9.Font = new System.Drawing.Font("Vazirmatn", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.label9.Location = new System.Drawing.Point(6, 61);
+      this.label9.Location = new System.Drawing.Point(194, 59);
       this.label9.Name = "label9";
       this.label9.Size = new System.Drawing.Size(19, 27);
       this.label9.TabIndex = 20;
@@ -247,7 +247,7 @@
       // 
       this.label8.AutoSize = true;
       this.label8.Font = new System.Drawing.Font("Vazirmatn", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.label8.Location = new System.Drawing.Point(6, 88);
+      this.label8.Location = new System.Drawing.Point(194, 86);
       this.label8.Name = "label8";
       this.label8.Size = new System.Drawing.Size(19, 27);
       this.label8.TabIndex = 19;
@@ -257,11 +257,11 @@
       // 
       this.label7.AutoSize = true;
       this.label7.Font = new System.Drawing.Font("Vazirmatn", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.label7.Location = new System.Drawing.Point(6, 115);
+      this.label7.Location = new System.Drawing.Point(194, 113);
       this.label7.Name = "label7";
-      this.label7.Size = new System.Drawing.Size(19, 27);
+      this.label7.Size = new System.Drawing.Size(24, 27);
       this.label7.TabIndex = 18;
-      this.label7.Text = "/";
+      this.label7.Text = "%";
       // 
       // label3
       // 
@@ -269,9 +269,9 @@
       this.label3.Font = new System.Drawing.Font("Vazirmatn", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.label3.Location = new System.Drawing.Point(6, 8);
       this.label3.Name = "label3";
-      this.label3.Size = new System.Drawing.Size(173, 27);
+      this.label3.Size = new System.Drawing.Size(218, 27);
       this.label3.TabIndex = 17;
-      this.label3.Text = "Choose your Operator :";
+      this.label3.Text = "عملگر ریاضی خود را انتخاب کنید :";
       // 
       // groupBox3
       // 
@@ -284,7 +284,7 @@
       this.groupBox3.Controls.Add(this.label19);
       this.groupBox3.Location = new System.Drawing.Point(12, 330);
       this.groupBox3.Name = "groupBox3";
-      this.groupBox3.Size = new System.Drawing.Size(200, 132);
+      this.groupBox3.Size = new System.Drawing.Size(221, 132);
       this.groupBox3.TabIndex = 40;
       this.groupBox3.TabStop = false;
       // 
@@ -292,7 +292,7 @@
       // 
       this.Ten_Radio.AutoSize = true;
       this.Ten_Radio.Checked = true;
-      this.Ten_Radio.Location = new System.Drawing.Point(42, 48);
+      this.Ten_Radio.Location = new System.Drawing.Point(164, 48);
       this.Ten_Radio.Name = "Ten_Radio";
       this.Ten_Radio.Size = new System.Drawing.Size(14, 13);
       this.Ten_Radio.TabIndex = 46;
@@ -302,7 +302,7 @@
       // Thirty_Radio
       // 
       this.Thirty_Radio.AutoSize = true;
-      this.Thirty_Radio.Location = new System.Drawing.Point(42, 103);
+      this.Thirty_Radio.Location = new System.Drawing.Point(164, 103);
       this.Thirty_Radio.Name = "Thirty_Radio";
       this.Thirty_Radio.Size = new System.Drawing.Size(14, 13);
       this.Thirty_Radio.TabIndex = 45;
@@ -311,7 +311,7 @@
       // Twenty_Radio
       // 
       this.Twenty_Radio.AutoSize = true;
-      this.Twenty_Radio.Location = new System.Drawing.Point(42, 75);
+      this.Twenty_Radio.Location = new System.Drawing.Point(164, 75);
       this.Twenty_Radio.Name = "Twenty_Radio";
       this.Twenty_Radio.Size = new System.Drawing.Size(14, 13);
       this.Twenty_Radio.TabIndex = 44;
@@ -321,7 +321,7 @@
       // 
       this.label22.AutoSize = true;
       this.label22.Font = new System.Drawing.Font("Vazirmatn", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.label22.Location = new System.Drawing.Point(6, 43);
+      this.label22.Location = new System.Drawing.Point(183, 42);
       this.label22.Name = "label22";
       this.label22.Size = new System.Drawing.Size(30, 27);
       this.label22.TabIndex = 43;
@@ -331,7 +331,7 @@
       // 
       this.label21.AutoSize = true;
       this.label21.Font = new System.Drawing.Font("Vazirmatn", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.label21.Location = new System.Drawing.Point(6, 70);
+      this.label21.Location = new System.Drawing.Point(183, 69);
       this.label21.Name = "label21";
       this.label21.Size = new System.Drawing.Size(30, 27);
       this.label21.TabIndex = 42;
@@ -341,7 +341,7 @@
       // 
       this.label20.AutoSize = true;
       this.label20.Font = new System.Drawing.Font("Vazirmatn", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.label20.Location = new System.Drawing.Point(6, 97);
+      this.label20.Location = new System.Drawing.Point(183, 96);
       this.label20.Name = "label20";
       this.label20.Size = new System.Drawing.Size(30, 27);
       this.label20.TabIndex = 41;
@@ -351,11 +351,11 @@
       // 
       this.label19.AutoSize = true;
       this.label19.Font = new System.Drawing.Font("Vazirmatn", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.label19.Location = new System.Drawing.Point(6, 16);
+      this.label19.Location = new System.Drawing.Point(34, 16);
       this.label19.Name = "label19";
-      this.label19.Size = new System.Drawing.Size(148, 27);
+      this.label19.Size = new System.Drawing.Size(181, 27);
       this.label19.TabIndex = 40;
-      this.label19.Text = "Choose your Time :";
+      this.label19.Text = "زمان را انتخاب کنید (ثانیه) :";
       // 
       // Speaking_Timer
       // 
@@ -372,7 +372,9 @@
       this.Controls.Add(this.Start_Button);
       this.Controls.Add(this.label1);
       this.Name = "Main_Form";
-      this.Text = "Main Form";
+      this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+      this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+      this.Text = "فرم اصلی";
       this.Load += new System.EventHandler(this.Main_Form_Load);
       this.groupBox1.ResumeLayout(false);
       this.groupBox1.PerformLayout();
